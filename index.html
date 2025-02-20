@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <input id="search-input" type="text" placeholder="Search..." list="suggestions" />
+  <datalist id="suggestions"></datalist>
+  <select id="filter-select">
+    <option value="both">Ambas</option>
+    <option value="in">Entrantes</option>
+    <option value="out">Salientes</option>
+  </select>
+  <div id="sigma-container" style="width: 100%; height: 100vh;"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
